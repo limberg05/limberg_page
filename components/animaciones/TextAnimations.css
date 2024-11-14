@@ -1,0 +1,21 @@
+/* TextAnimation.css */
+.animated-text {
+  display: inline-block;
+  font-size: 2rem;
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #4ade80;
+    transform: translateY(0);
+  }
+  50% {
+    color: #22c55e;
+    transform: translateY(-5px);
+  }
+  100% {
+    color: #4ade80;
+    transform: translateY(0);
+  }
+}
