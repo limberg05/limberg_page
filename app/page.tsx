@@ -1,6 +1,12 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { Contacto, Hero, Navbar, NavbarDropDown } from '@/components/index';
+import {
+  Contacto,
+  Hero,
+  Navbar,
+  NavbarDropDown,
+  Footer,
+} from '@/components/index';
 
 export default function Page() {
   const [isClient, setIsClient] = useState(false);
@@ -24,6 +30,7 @@ export default function Page() {
       <NavbarDropDown />
       <Hero />
       <Contacto />
+      <Footer />
     </div>
   );
 }
