@@ -1,7 +1,9 @@
 export function Hero() {
   return (
     <body>
-      <h1 className="text-5xl font-semibold flex m-11">Explora Mi Trabajo</h1>
+      <h1 className="text-3xl font-semibold flex m-7 lg:text-4xl">
+        Explora Mi Trabajo
+      </h1>
       <p className="h-3px bg-gray-500 max-w-screen h-0.5 mb-11" />
 
       <div className="grid grid-cols-1 items-center bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 to sm:grid-cols-2 ">

@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 
 export function Navbar() {
   return (
-    <div className="bg-black flex items-center h-20 justify-between px-14">
+    <div className="hidden sm:flex bg-black items-center h-20 justify-between px-14 ">
       <p className="text-white ">Limberg.dev</p>
       <div className="">
         <NavigationMenu>
