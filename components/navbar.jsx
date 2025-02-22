@@ -6,10 +6,10 @@ import {
 
 import { Button } from '@/components/ui/button';
 
-export function Navbar() {
+const Navbar = () => {
   return (
-    <div className="hidden sm:flex bg-black items-center h-20 justify-between px-14 ">
-      <p className="text-white ">Limberg.dev</p>
+    <div className="hidden sm:flex bg-black items-center h-14 justify-between px-14 ">
+      <p className="text-white m-4 ">Limberg.dev</p>
       <div className="">
         <NavigationMenu>
           <NavigationMenuList>
@@ -33,4 +33,6 @@ export function Navbar() {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;
