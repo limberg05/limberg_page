@@ -3,9 +3,7 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
-import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -18,21 +16,14 @@ const Navbar = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/pages/skills">
-                <Button variant="secondary">Skills</Button>
+              <Link href="/pages/proyects">
+                <Button variant="secondary">Proyects</Button>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="secondary">Experiencia</Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button variant="secondary">Projects</Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button variant="secondary">Contact</Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button variant="secondary">Reach Out</Button>
+              <Link href="/pages/skills">
+                <Button variant="secondary">Skills</Button>
+              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

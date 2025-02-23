@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-const MySkills = () => {
+const MyProyects = () => {
   return (
     <div>
       <h1 className="flex text-3xl justify-center sm:justify-start font-semibold  m-10 lg:text-4xl">
-        My Skills
+        My Proyects
       </h1>
       <p className="h-3px bg-gray-500 max-w-screen h-0.5 mb-11 m-10" />
 
@@ -54,4 +54,4 @@ const MySkills = () => {
     </div>
   );
 };
-export default MySkills;
+export default MyProyects;

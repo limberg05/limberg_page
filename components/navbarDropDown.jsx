@@ -18,10 +18,12 @@ const navbarDropDown = () => {
   const params = usePathname();
   const [inicio, setInicio] = useState(false);
   const [skills, setSkills] = useState(false);
+  const [proyects, setProyects] = useState(false);
 
   useEffect(() => {
     console.log(params);
     if (params === '/') setInicio(true);
+    if (params === '/pages/proyects') setProyects(true);
     if (params === '/pages/skills') setSkills(true);
   }, []);
 
@@ -46,28 +48,18 @@ const navbarDropDown = () => {
                 <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
               </DropdownMenuItem>
             </Link>
+            <Link href="/pages/proyects" className={proyects ? 'hidden' : ''}>
+              <DropdownMenuItem>
+                Proyects
+                <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+              </DropdownMenuItem>
+            </Link>
             <Link href="/pages/skills" className={skills ? 'hidden' : ''}>
               <DropdownMenuItem>
                 Skills
                 <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
               </DropdownMenuItem>
             </Link>
-            <DropdownMenuItem>
-              Experiencia
-              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Projects
-              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Contact
-              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Reach out
-              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-            </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
         </DropdownMenuContent>
