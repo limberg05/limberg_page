@@ -3,6 +3,9 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from '@/components/ui/resizable';
+
+import '@/styles.css';
+
 import { Button } from './ui/button';
 
 const Contacto = () => {
@@ -24,12 +27,12 @@ const Contacto = () => {
               Email: Hernandezdelriojuan@gmail.com
             </span>
             <div className="flex justify-center space-x-4">
-              <Button className="bg-black outline-none" variant="outline">
+              <Button className="bg-black outline-none card" variant="outline">
                 <a className="items-center" href="https://github.com/limberg05">
                   Git Hub
                 </a>
               </Button>
-              <Button className="bg-black outline-none" variant="outline">
+              <Button className="bg-black outline-none card" variant="outline">
                 <a
                   className="items-center"
                   href="https://www.linkedin.com/in/limberg-hernandez-del-rio-973453275/"
