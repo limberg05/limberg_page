@@ -1,0 +1,56 @@
+.coche {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 15px 15px 0 0;
+  animation: correr 5s linear infinite;
+  z-index: 2;
+}
+
+.coche:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 60px;
+  height: 20px;
+  background-color: #2980b9;
+  border-radius: 10px;
+}
+
+.coche .rueda {
+  position: absolute;
+  bottom: -5px;
+  width: 15px;
+  height: 15px;
+  background-color: #2c3e50;
+  border-radius: 50%;
+}
+
+.coche .rueda.izquierda {
+  left: 10px;
+}
+
+.coche .rueda.derecha {
+  right: 10px;
+}
+
+.coche .luces {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  width: 10px;
+  height: 5px;
+  background-color: #f39c12;
+  border-radius: 50%;
+}
+
+@keyframes correr {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100%;
+  }
+}
