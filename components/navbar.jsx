@@ -5,28 +5,33 @@ import {
 } from '@/components/ui/navigation-menu';
 
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <div className="hidden sm:flex bg-black items-center h-14 justify-between px-14 ">
-      <p className="text-white m-4 ">Limberg.dev</p>
+      <Link href="/">
+        <p className="text-white m-4 ">Limberg.dev</p>
+      </Link>
       <div className="">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Button variant="outline">Skills</Button>
+              <Link href="/pages/skills">
+                <Button variant="secondary">Skills</Button>
+              </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="outline">Experiencia</Button>
+              <Button variant="secondary">Experiencia</Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="outline">Projects</Button>
+              <Button variant="secondary">Projects</Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="outline">Contact</Button>
+              <Button variant="secondary">Contact</Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="outline">Reach Out</Button>
+              <Button variant="secondary">Reach Out</Button>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
