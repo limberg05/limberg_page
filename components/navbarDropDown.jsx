@@ -1,3 +1,4 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -10,8 +11,20 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
 const navbarDropDown = () => {
+  const params = usePathname();
+  const [inicio, setInicio] = useState(false);
+  const [skills, setSkills] = useState(false);
+
+  useEffect(() => {
+    console.log(params);
+    if (params === '/') setInicio(true);
+    if (params === '/pages/skills') setSkills(true);
+  }, []);
+
   return (
     <div>
       <DropdownMenu>
@@ -27,13 +40,13 @@ const navbarDropDown = () => {
           <DropdownMenuLabel>Menu</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <Link href="/">
+            <Link href="/" className={inicio ? 'hidden' : ''}>
               <DropdownMenuItem>
                 Inicio
                 <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
               </DropdownMenuItem>
             </Link>
-            <Link href="/pages/skills">
+            <Link href="/pages/skills" className={skills ? 'hidden' : ''}>
               <DropdownMenuItem>
                 Skills
                 <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>

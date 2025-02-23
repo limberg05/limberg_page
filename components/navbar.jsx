@@ -3,15 +3,16 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
-
+import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <div className="hidden sm:flex bg-black items-center h-14 justify-between px-14 ">
       <Link href="/">
-        <p className="text-white m-4 ">Limberg.dev</p>
+        <p className="text-white m-4">Limberg.dev</p>
       </Link>
       <div className="">
         <NavigationMenu>
