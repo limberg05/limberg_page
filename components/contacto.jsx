@@ -80,7 +80,7 @@ const Contacto = () => {
           </ResizablePanel>
         </ResizablePanelGroup>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mx-2">
         <Card className="w-[350px] bg-black text-white">
           <CardHeader>
             <CardTitle>Tu info</CardTitle>
