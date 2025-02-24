@@ -16,7 +16,11 @@ const MyProyects = () => {
             sí para armar tu propia PC, proporcionando resultados con enlaces
             directos a productos disponibles en Mercado Libre.
           </p>
-          <Link href="https://www.pcfacil.shop/">
+          <Link
+            href="https://www.pcfacil.shop/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="bg-black text-white rounded-full w-32 h-9 mb-9">
               Proyecto
             </button>
@@ -37,7 +41,11 @@ const MyProyects = () => {
             Una pagina web que te muestra sismos que ocurrieron en mexico asi
             como su magnitud, en esta pagina ayude a hacer el front end.
           </p>
-          <Link href="https://github.com/SOSMex/earthquakesWeb">
+          <Link
+            href="https://github.com/SOSMex/earthquakesWeb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="bg-black text-white rounded-full w-60 h-9 mb-9">
               Proyecto en Git Hub
             </button>
