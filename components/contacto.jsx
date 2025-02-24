@@ -32,7 +32,7 @@ import {
 const Contacto = () => {
   return (
     <div className="grid items-center justify-center mb-14 grid-cols-1 sm:grid-cols-2">
-      <div className="flex justify-center mx-20 sm:mx-1 mb-8 sm:mb-0">
+      <div className="flex justify-center mx-2 sm:mx-1 mb-8 sm:mb-0 px-4 sm:px-0">
         <ResizablePanelGroup
           direction="vertical"
           className="min-h-[200px] max-w-lg rounded-lg border md:min-w-[450px] text-white bg-black"
@@ -44,11 +44,11 @@ const Contacto = () => {
           </ResizablePanel>
           <ResizableHandle />
           <ResizablePanel defaultSize={75}>
-            <div className="grid grid-rows-2 h-full items-center justify-center p-2 ">
-              <span className="font-semibold">
+            <div className="flex-wrap sm:grid-rows-2 h-full items-center text-center">
+              <span className="font-semibold text-sm sm:text-md">
                 Email: Hernandezdelriojuan@gmail.com
               </span>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center space-x-4 ">
                 <Button
                   className="bg-black outline-none card"
                   variant="outline"
