@@ -31,11 +31,11 @@ import {
 
 const Contacto = () => {
   return (
-    <div className="flex justify-center mb-14 gap-14">
-      <div>
+    <div className="grid items-center justify-center mb-14 grid-cols-1 sm:grid-cols-2">
+      <div className="flex justify-center mx-20 sm:mx-1 mb-8 sm:mb-0">
         <ResizablePanelGroup
           direction="vertical"
-          className="min-h-[200px] max-w-md rounded-lg border md:min-w-[450px] text-white bg-black"
+          className="min-h-[200px] max-w-lg rounded-lg border md:min-w-[450px] text-white bg-black"
         >
           <ResizablePanel defaultSize={25}>
             <div className="flex h-full items-center justify-center p-6">
@@ -80,7 +80,7 @@ const Contacto = () => {
           </ResizablePanel>
         </ResizablePanelGroup>
       </div>
-      <div>
+      <div className="flex justify-center">
         <Card className="w-[350px] bg-black text-white">
           <CardHeader>
             <CardTitle>Tu info</CardTitle>
