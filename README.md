@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Limberg.dev — Portafolio
 
-## Getting Started
+Portafolio personal de **Juan Limberg Hernández del Río**, desarrollador Frontend & Full Stack.
+Sitio 100% frontend construido con Next.js (App Router), TypeScript y Tailwind CSS, desplegado en Vercel.
 
-First, run the development server:
+## Secciones
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Una sola página con navegación por anclas y scroll-spy:
+
+| Sección | Ancla |
+| --- | --- |
+| Inicio / Hero | `#inicio` |
+| Sobre mí | `#sobre-mi` |
+| Experiencia | `#experiencia` |
+| Proyectos | `#proyectos` |
+| Habilidades | `#habilidades` |
+| Certificaciones | `#certificaciones` |
+| Contacto | `#contacto` |
+
+## Características
+
+- Modo claro / oscuro con persistencia en `localStorage` y sin parpadeo al cargar.
+- Diseño mobile-first, probado desde 360 px hasta escritorio.
+- Animaciones de entrada con `IntersectionObserver` (sin librerías extra) y soporte de `prefers-reduced-motion`.
+- Línea de tiempo de experiencia expandible y filtros de proyectos por tecnología.
+- Visor de certificados a pantalla completa.
+- Formulario de contacto que abre el cliente de correo con el mensaje ya redactado (no requiere backend).
+- Descarga directa del CV en PDF.
+- SEO: metadatos Open Graph / Twitter, `robots.txt` y `sitemap.xml` generados.
+
+## Contenido
+
+Todo el texto del sitio (experiencia, proyectos, habilidades, certificaciones) vive en un solo archivo:
+
+```
+lib/data.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para actualizar el portafolio basta con editar ese archivo — los componentes se adaptan solos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Desarrollo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # build de producción
+npm start       # servir el build
+```
 
-## Learn More
+## Variables de entorno (opcional)
 
-To learn more about Next.js, take a look at the following resources:
+Al usar un dominio propio, define en Vercel:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_SITE_URL=https://tu-dominio.com
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Sin esta variable el sitio usa automáticamente la URL que le asigna Vercel.
 
-## Deploy on Vercel
+## Estructura
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/
+  layout.tsx          # metadatos, fuentes, script anti-parpadeo del tema
+  page.tsx            # composición de todas las secciones
+  globals.css         # tokens de color, utilidades y animaciones
+  robots.ts           # robots.txt
+  sitemap.ts          # sitemap.xml
+  pages/              # rutas antiguas → redirigen a las anclas nuevas
+components/
+  site/               # secciones del portafolio
+  ui/                 # primitivas de shadcn/ui
+lib/
+  data.ts             # contenido del CV
+  site.ts             # URL pública del sitio
+public/               # foto, certificados y CV en PDF
+```

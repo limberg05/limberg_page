@@ -1,13 +1,6 @@
-'use client';
-import { Navbar, Footer, NavbarDropDown, Skills } from '@/components/index';
+import { redirect } from 'next/navigation';
 
+// Ruta antigua conservada para no romper enlaces existentes.
 export default function Page() {
-  return (
-    <div className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100">
-      <Navbar />
-      <NavbarDropDown />
-      <Skills />
-      <Footer />
-    </div>
-  );
+  redirect('/#habilidades');
 }

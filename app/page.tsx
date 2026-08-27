@@ -1,21 +1,31 @@
-'use client';
-
 import {
-  Contacto,
-  Hero,
   Navbar,
-  NavbarDropDown,
+  Hero,
+  About,
+  Experience,
+  Projects,
+  Skills,
+  Certifications,
+  Contact,
   Footer,
+  BackToTop,
 } from '@/components/index';
 
 export default function Page() {
   return (
-    <div className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100">
+    <>
       <Navbar />
-      <NavbarDropDown />
-      <Hero />
-      <Contacto />
+      <main id="contenido">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Certifications />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+      <BackToTop />
+    </>
   );
 }
