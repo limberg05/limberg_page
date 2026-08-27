@@ -9,7 +9,6 @@ export const profile = {
   email: 'hernandezdelriojuan@gmail.com',
   github: 'https://github.com/limberg05',
   linkedin: 'https://www.linkedin.com/in/limberg-hernandez-del-rio-973453275/',
-  cv: '/CV-Juan-Limberg-Hernandez-del-Rio.pdf',
   photo: '/fotoLimberg.jpeg',
   summary:
     'Construyo interfaces web rápidas, accesibles y responsivas con React, Next.js y TypeScript. He trabajado desde plataformas institucionales de alcance nacional hasta aplicaciones enfocadas en accesibilidad e inclusión digital.',

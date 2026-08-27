@@ -25,7 +25,6 @@ Una sola página con navegación por anclas y scroll-spy:
 - Línea de tiempo de experiencia expandible y filtros de proyectos por tecnología.
 - Visor de certificados a pantalla completa.
 - Formulario de contacto que abre el cliente de correo con el mensaje ya redactado (no requiere backend).
-- Descarga directa del CV en PDF.
 - SEO: metadatos Open Graph / Twitter, `robots.txt` y `sitemap.xml` generados.
 
 ## Contenido
@@ -73,5 +72,5 @@ components/
 lib/
   data.ts             # contenido del CV
   site.ts             # URL pública del sitio
-public/               # foto, certificados y CV en PDF
+public/               # foto y certificados
 ```

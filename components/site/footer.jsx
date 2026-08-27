@@ -58,13 +58,6 @@ const Footer = () => {
                 {link.label}
               </a>
             ))}
-            <a
-              href={profile.cv}
-              download
-              className="text-sm text-muted-foreground transition-colors hover:text-primary"
-            >
-              Descargar CV
-            </a>
           </nav>
         </div>
 

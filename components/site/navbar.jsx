@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Menu, X, FileDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { navLinks, profile } from '@/lib/data';
 import ThemeToggle from './theme-toggle';
 
@@ -119,17 +119,6 @@ const Navbar = () => {
           </ul>
 
           <div className="flex items-center gap-2">
-            <a
-              href={profile.cv}
-              download
-              className="hidden items-center gap-2 rounded-full bg-foreground px-4 py-2
-                         text-sm font-semibold text-background transition-transform
-                         hover:scale-[1.03] sm:inline-flex"
-            >
-              <FileDown className="h-4 w-4" />
-              CV
-            </a>
-
             <ThemeToggle />
 
             <button
@@ -187,17 +176,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        <a
-          href={profile.cv}
-          download
-          onClick={() => setOpen(false)}
-          className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl
-                     bg-foreground px-4 py-3 text-sm font-semibold text-background"
-        >
-          <FileDown className="h-4 w-4" />
-          Descargar CV
-        </a>
 
         <p className="mt-auto pt-6 text-xs text-muted-foreground">
           {profile.location}

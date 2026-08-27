@@ -8,7 +8,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  FileDown,
 } from 'lucide-react';
 import { profile, stats } from '@/lib/data';
 
@@ -137,16 +136,6 @@ const Hero = () => {
                            hover:bg-primary/90 active:scale-[0.99]"
               >
                 Ver mis proyectos
-              </a>
-              <a
-                href={profile.cv}
-                download
-                className="inline-flex items-center justify-center gap-2 rounded-full
-                           border border-border bg-card/60 px-6 py-3.5 text-sm font-semibold
-                           backdrop-blur transition-colors hover:border-primary/50 hover:text-primary"
-              >
-                <FileDown className="h-4 w-4" />
-                Descargar CV
               </a>
             </div>
 
