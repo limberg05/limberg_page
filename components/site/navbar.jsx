@@ -88,9 +88,8 @@ const Navbar = () => {
             className="group flex items-center gap-2 font-mono text-sm font-bold tracking-tight sm:text-base"
           >
             <span
-              className="flex h-8 w-8 items-center justify-center rounded-lg
-                         bg-gradient-to-br from-primary to-accent text-[13px]
-                         font-black text-primary-foreground"
+              className="flex h-8 w-8 items-center justify-center rounded-md
+                         bg-primary text-[13px] font-bold text-primary-foreground"
             >
               L
             </span>
@@ -148,7 +147,7 @@ const Navbar = () => {
 
         {/* Progreso de lectura */}
         <div
-          className="h-0.5 origin-left bg-gradient-to-r from-primary to-accent transition-transform duration-150"
+          className="h-0.5 origin-left bg-primary transition-transform duration-150"
           style={{ transform: `scaleX(${progress / 100})` }}
         />
       </header>

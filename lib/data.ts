@@ -7,8 +7,6 @@ export const profile = {
   degreeShort: 'Ing. en TI y Negocios Digitales',
   location: 'Mérida, Yucatán, México',
   email: 'hernandezdelriojuan@gmail.com',
-  phone: '961 233 0156',
-  phoneHref: '+529612330156',
   github: 'https://github.com/limberg05',
   linkedin: 'https://www.linkedin.com/in/limberg-hernandez-del-rio-973453275/',
   cv: '/CV-Juan-Limberg-Hernandez-del-Rio.pdf',
@@ -20,7 +18,7 @@ export const profile = {
 
 export const stats = [
   { value: '2+', label: 'Años de experiencia' },
-  { value: '6', label: 'Proyectos profesionales' },
+  { value: '5', label: 'Proyectos profesionales' },
   { value: '9', label: 'Certificaciones' },
   { value: '3', label: 'Idiomas en producción' },
 ];
@@ -79,21 +77,6 @@ export const experience = [
       'Enfoque central en inclusión digital y buenas prácticas de código.',
     ],
     stack: ['React', 'JavaScript', 'Accesibilidad (a11y)'],
-  },
-  {
-    role: 'Desarrollador Full Stack',
-    company: 'Sitio Web Oficial — Diputada Federal',
-    org: 'Proyecto institucional',
-    period: 'Ene 2025 — Jul 2025',
-    mode: 'Remoto',
-    highlights: [
-      'Diseñé y desarrollé un sitio web funcional con React y Next.js.',
-      'Creé componentes reutilizables con Tailwind CSS y shadcn/ui.',
-      'Implementé diseño responsivo optimizado para dispositivos móviles.',
-      'Integré un formulario de contacto funcional mediante EmailJS.',
-      'Enfoque en accesibilidad, usabilidad y experiencia de usuario.',
-    ],
-    stack: ['Next.js', 'React', 'Tailwind CSS', 'shadcn/ui', 'EmailJS'],
   },
   {
     role: 'Interno de Ingeniero de Software',
@@ -210,7 +193,6 @@ export const projects = [
     repo: null,
     image: null,
     featured: true,
-    accent: 'emerald',
     emoji: '🚆',
   },
   {
@@ -223,7 +205,6 @@ export const projects = [
     repo: null,
     image: '/pcFacil.jpg',
     featured: true,
-    accent: 'indigo',
     emoji: '🖥️',
   },
   {
@@ -236,7 +217,6 @@ export const projects = [
     repo: 'https://github.com/SOSMex/earthquakesWeb',
     image: '/logo-sosmex.jpg',
     featured: true,
-    accent: 'amber',
     emoji: '🌎',
   },
   {
@@ -249,7 +229,6 @@ export const projects = [
     repo: null,
     image: null,
     featured: false,
-    accent: 'violet',
     emoji: '👁️',
   },
   {
@@ -262,21 +241,7 @@ export const projects = [
     repo: null,
     image: null,
     featured: false,
-    accent: 'cyan',
     emoji: '🅿️',
-  },
-  {
-    title: 'Sitio Diputada Federal',
-    subtitle: 'Proyecto institucional',
-    description:
-      'Sitio web full stack con componentes reutilizables, diseño responsivo optimizado para móvil y formulario de contacto funcional mediante EmailJS.',
-    tags: ['Next.js', 'Tailwind CSS', 'shadcn/ui', 'EmailJS'],
-    live: null,
-    repo: null,
-    image: null,
-    featured: false,
-    accent: 'rose',
-    emoji: '🏛️',
   },
 ];
 

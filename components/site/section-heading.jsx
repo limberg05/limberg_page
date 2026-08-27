@@ -21,7 +21,7 @@ const SectionHeading = ({ eyebrow, title, description, align = 'left' }) => {
         </p>
       )}
       <div
-        className={`mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-primary to-accent ${
+        className={`mt-6 h-0.5 w-12 rounded-full bg-primary/70 ${
           centered ? 'mx-auto' : ''
         }`}
       />

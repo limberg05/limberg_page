@@ -14,9 +14,8 @@ const Footer = () => {
               className="flex items-center gap-2 font-mono text-base font-bold"
             >
               <span
-                className="flex h-8 w-8 items-center justify-center rounded-lg
-                           bg-gradient-to-br from-primary to-accent text-[13px]
-                           font-black text-primary-foreground"
+                className="flex h-8 w-8 items-center justify-center rounded-md
+                           bg-primary text-[13px] font-bold text-primary-foreground"
               >
                 L
               </span>

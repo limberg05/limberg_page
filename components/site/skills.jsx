@@ -39,7 +39,7 @@ const Skills = () => {
                   <div className="flex items-center gap-3">
                     <span
                       className="inline-flex h-10 w-10 items-center justify-center rounded-xl
-                                 bg-gradient-to-br from-primary/15 to-accent/15 text-primary"
+                                 bg-secondary text-primary"
                     >
                       <Icon className="h-5 w-5" />
                     </span>

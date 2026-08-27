@@ -9,25 +9,14 @@ import Reveal from './reveal';
 
 const FILTERS = ['Todos', 'Next.js', 'React', 'TypeScript', 'Accesibilidad'];
 
-const ACCENTS = {
-  emerald: 'from-emerald-500/20 to-teal-500/10 text-emerald-500',
-  indigo: 'from-indigo-500/20 to-blue-500/10 text-indigo-500',
-  amber: 'from-amber-500/20 to-orange-500/10 text-amber-500',
-  violet: 'from-violet-500/20 to-fuchsia-500/10 text-violet-500',
-  cyan: 'from-cyan-500/20 to-sky-500/10 text-cyan-500',
-  rose: 'from-rose-500/20 to-pink-500/10 text-rose-500',
-};
-
 const ProjectCard = ({ project, index }) => {
-  const accent = ACCENTS[project.accent] ?? ACCENTS.indigo;
-
   return (
     <Reveal delay={index * 70} className="h-full">
       <article className="card-surface card-hover group flex h-full flex-col overflow-hidden">
         {/* Cabecera visual */}
         <div
-          className={`relative flex h-40 items-center justify-center overflow-hidden
-                      bg-gradient-to-br sm:h-44 ${accent}`}
+          className="relative flex h-40 items-center justify-center overflow-hidden
+                     border-b border-border bg-secondary/50 sm:h-44"
         >
           {project.image ? (
             <Image
@@ -38,15 +27,16 @@ const ProjectCard = ({ project, index }) => {
               className="object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
             />
           ) : (
-            <span className="text-5xl transition-transform duration-500 group-hover:scale-110">
+            <span className="text-4xl opacity-80 transition-transform duration-500 group-hover:scale-105">
               {project.emoji}
             </span>
           )}
 
           {project.featured && (
             <span
-              className="absolute right-3 top-3 rounded-full bg-background/85 px-2.5 py-1
-                         text-[10px] font-bold uppercase tracking-wider text-foreground backdrop-blur"
+              className="absolute right-3 top-3 rounded-full border border-border bg-background/90
+                         px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider
+                         text-muted-foreground backdrop-blur"
             >
               Destacado
             </span>
@@ -137,7 +127,7 @@ const Projects = () => {
                 onClick={() => setFilter(f)}
                 className={`shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-all ${
                   filter === f
-                    ? 'border-primary bg-primary text-primary-foreground shadow-md shadow-primary/25'
+                    ? 'border-primary bg-primary text-primary-foreground'
                     : 'border-border bg-card/60 text-muted-foreground hover:border-primary/50 hover:text-foreground'
                 }`}
               >

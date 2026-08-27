@@ -51,7 +51,7 @@ const About = () => {
                 <article className="card-surface card-hover h-full p-5 sm:p-6">
                   <div
                     className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl
-                               bg-gradient-to-br from-primary/15 to-accent/15 text-primary"
+                               bg-secondary text-primary"
                   >
                     <v.icon className="h-5 w-5" />
                   </div>
@@ -109,7 +109,7 @@ const About = () => {
                       </div>
                       <div className="h-1.5 overflow-hidden rounded-full bg-secondary">
                         <div
-                          className="h-full rounded-full bg-gradient-to-r from-primary to-accent"
+                          className="h-full rounded-full bg-primary/80"
                           style={{ width: `${lang.value}%` }}
                         />
                       </div>

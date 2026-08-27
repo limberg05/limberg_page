@@ -98,13 +98,12 @@ const Hero = () => {
           <div className="animate-fade-up text-center lg:text-left">
             {profile.available && (
               <span
-                className="inline-flex items-center gap-2 rounded-full border border-accent/40
-                           bg-accent/10 px-3.5 py-1.5 text-xs font-medium text-accent-foreground
-                           dark:text-accent"
+                className="inline-flex items-center gap-2 rounded-full border border-border
+                           bg-secondary/70 px-3.5 py-1.5 text-xs font-medium text-muted-foreground"
               >
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-pulse-ring absolute inline-flex h-2 w-2 rounded-full bg-accent" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                  <span className="animate-pulse-ring absolute inline-flex h-2 w-2 rounded-full bg-success" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
                 </span>
                 Disponible para nuevas oportunidades
               </span>
@@ -112,7 +111,7 @@ const Hero = () => {
 
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
               Hola, soy{' '}
-              <span className="text-gradient block sm:inline">Limberg</span>
+              <span className="text-accent-tone block sm:inline">Limberg</span>
             </h1>
 
             <p className="mt-4 min-h-[2.2em] font-mono text-lg text-muted-foreground sm:text-xl lg:text-2xl">
@@ -133,9 +132,9 @@ const Hero = () => {
               <a
                 href="#proyectos"
                 className="inline-flex items-center justify-center gap-2 rounded-full
-                           bg-gradient-to-r from-primary to-accent px-6 py-3.5
-                           text-sm font-semibold text-primary-foreground shadow-lg
-                           shadow-primary/25 transition-transform hover:scale-[1.03] active:scale-95"
+                           bg-primary px-6 py-3.5 text-sm font-semibold
+                           text-primary-foreground transition-colors
+                           hover:bg-primary/90 active:scale-[0.99]"
               >
                 Ver mis proyectos
               </a>
@@ -183,13 +182,12 @@ const Hero = () => {
           <div className="order-first flex justify-center lg:order-none">
             <div className="relative">
               <div
-                className="absolute -inset-3 rounded-full bg-gradient-to-tr from-primary
-                           via-accent to-primary opacity-25 blur-2xl"
+                className="absolute -inset-3 rounded-full bg-primary opacity-[0.08] blur-2xl"
                 aria-hidden="true"
               />
               <div
                 className="relative h-52 w-52 overflow-hidden rounded-full border-2
-                           border-primary/30 shadow-2xl sm:h-64 sm:w-64 lg:h-80 lg:w-80"
+                           border-border shadow-xl sm:h-64 sm:w-64 lg:h-80 lg:w-80"
               >
                 <Image
                   src={profile.photo}
@@ -218,7 +216,7 @@ const Hero = () => {
               key={s.label}
               className="card-surface card-hover px-4 py-5 text-center"
             >
-              <p className="text-gradient text-3xl font-extrabold sm:text-4xl">
+              <p className="text-accent-tone text-3xl font-bold sm:text-4xl">
                 {s.value}
               </p>
               <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
@@ -237,7 +235,7 @@ const Hero = () => {
               key={`${tech}-${i}`}
               className="whitespace-nowrap font-mono text-xs text-muted-foreground sm:text-sm"
             >
-              <span className="mr-8 text-primary">◆</span>
+              <span className="mr-8 text-border">/</span>
               {tech}
             </span>
           ))}

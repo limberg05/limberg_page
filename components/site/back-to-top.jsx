@@ -19,8 +19,8 @@ const BackToTop = () => {
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       aria-label="Volver arriba"
       className={`fixed bottom-5 right-5 z-40 inline-flex h-12 w-12 items-center justify-center
-                  rounded-full bg-gradient-to-br from-primary to-accent text-primary-foreground
-                  shadow-lg shadow-primary/30 transition-all duration-300 ${
+                  rounded-full bg-primary text-primary-foreground
+                  shadow-lg shadow-black/20 transition-all duration-300 ${
                     show
                       ? 'translate-y-0 opacity-100'
                       : 'pointer-events-none translate-y-4 opacity-0'

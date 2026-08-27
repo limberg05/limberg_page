@@ -8,7 +8,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone,
   Send,
 } from 'lucide-react';
 import { profile } from '@/lib/data';
@@ -56,12 +55,6 @@ const Contact = () => {
       value: profile.email,
       href: `mailto:${profile.email}`,
     },
-    {
-      icon: Phone,
-      label: 'Teléfono',
-      value: profile.phone,
-      href: `tel:${profile.phoneHref}`,
-    },
     { icon: MapPin, label: 'Ubicación', value: profile.location, href: null },
   ];
 
@@ -91,7 +84,7 @@ const Contact = () => {
                   <li key={item.label} className="flex items-start gap-3">
                     <span
                       className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center
-                                 rounded-lg bg-gradient-to-br from-primary/15 to-accent/15 text-primary"
+                                 rounded-lg bg-secondary text-primary"
                     >
                       <item.icon className="h-4 w-4" />
                     </span>
@@ -123,7 +116,7 @@ const Contact = () => {
               >
                 {copied ? (
                   <>
-                    <Check className="h-4 w-4 text-accent" />
+                    <Check className="h-4 w-4 text-success" />
                     ¡Correo copiado!
                   </>
                 ) : (
@@ -240,9 +233,9 @@ const Contact = () => {
               <button
                 type="submit"
                 className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl
-                           bg-gradient-to-r from-primary to-accent px-6 py-3.5 text-sm font-bold
-                           text-primary-foreground shadow-lg shadow-primary/25
-                           transition-transform hover:scale-[1.02] active:scale-95"
+                           bg-primary px-6 py-3.5 text-sm font-semibold
+                           text-primary-foreground transition-colors
+                           hover:bg-primary/90 active:scale-[0.99]"
               >
                 <Send className="h-4 w-4" />
                 Enviar mensaje

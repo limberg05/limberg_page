@@ -131,7 +131,7 @@ const Experience = () => {
           {/* Línea vertical */}
           <span
             className="absolute left-[11px] top-2 h-full w-px bg-gradient-to-b
-                       from-primary/60 via-border to-transparent sm:left-[19px]"
+                       from-border via-border to-transparent sm:left-[19px]"
             aria-hidden="true"
           />
 
