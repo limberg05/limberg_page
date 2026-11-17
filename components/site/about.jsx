@@ -24,7 +24,7 @@ const VALUES = [
   {
     icon: Rocket,
     title: 'De legacy a moderno',
-    text: 'Migré una base de código PHP a una arquitectura Next.js + TypeScript en producción.',
+    text: 'Migré una base de código PHP a una nueva arquitectura con Next.js y TypeScript, entregada y presentada al Director General.',
   },
   {
     icon: Users,

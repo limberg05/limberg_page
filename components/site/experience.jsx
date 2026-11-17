@@ -124,7 +124,7 @@ const Experience = () => {
         <SectionHeading
           eyebrow="02 — Trayectoria"
           title="Experiencia profesional"
-          description="Del frontend de una app de sismos en tiempo real a la modernización del sitio oficial del Tren Maya. Toca cada puesto para ver el detalle."
+          description="Del frontend de una app de sismos en tiempo real a la propuesta de un nuevo sitio para el Tren Maya. Toca cada puesto para ver el detalle."
         />
 
         <div className="relative mt-12">

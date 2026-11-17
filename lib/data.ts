@@ -19,20 +19,20 @@ export const stats = [
   { value: '2+', label: 'Años de experiencia' },
   { value: '5', label: 'Proyectos profesionales' },
   { value: '9', label: 'Certificaciones' },
-  { value: '3', label: 'Idiomas en producción' },
+  { value: '3', label: 'Idiomas implementados' },
 ];
 
 export const experience = [
   {
     role: 'Interno de Desarrollo Web',
-    company: 'Tren Maya — Sitio Web Oficial',
+    company: 'Tren Maya — Propuesta de nuevo sitio oficial',
     org: 'Dirección de Comunicación Social',
     period: 'Feb 2026 — Jun 2026',
-    mode: 'trenmaya.gob.mx',
+    mode: 'Presencial',
     current: true,
-    link: 'https://www.trenmaya.gob.mx',
     highlights: [
-      'Modernicé una plataforma institucional migrando código legacy en PHP a una arquitectura Next.js / React con TypeScript.',
+      'Desarrollé una nueva versión del sitio institucional, migrando código legacy en PHP a una arquitectura Next.js / React con TypeScript.',
+      'Coordiné los cambios con Comunicación Social, Paquetes, Trenes de Carga y TI, y presenté el proyecto al Director General.',
       'Implementé internacionalización multi-idioma: español, inglés y francés.',
       'Integré mapas interactivos y desarrollé un chatbot con avatar animado.',
       'Desarrollé secciones dinámicas con itinerarios, tarjetas y filtros.',
@@ -184,11 +184,11 @@ export const languages = [
 export const projects = [
   {
     title: 'Tren Maya',
-    subtitle: 'Sitio web oficial · trenmaya.gob.mx',
+    subtitle: 'Propuesta de nuevo sitio oficial',
     description:
-      'Migración de una plataforma institucional legacy en PHP hacia Next.js y TypeScript, con soporte en 3 idiomas, mapas interactivos, chatbot con avatar animado y mejoras importantes en Lighthouse.',
+      'Nueva versión del sitio institucional, migrado de PHP legacy a Next.js y TypeScript, presentada al Director General, con soporte en 3 idiomas, mapas interactivos, chatbot con avatar animado y mejoras importantes en Lighthouse.',
     tags: ['Next.js', 'TypeScript', 'i18n', 'PostgreSQL', 'Redis', 'Docker'],
-    live: 'https://www.trenmaya.gob.mx',
+    live: null,
     repo: null,
     image: null,
     featured: true,
@@ -224,7 +224,7 @@ export const projects = [
     description:
       'Aplicación de accesibilidad que convierte texto digital a formato Braille respetando estándares, con una interfaz pensada para personas con discapacidad visual.',
     tags: ['React', 'Accesibilidad', 'Inclusión digital'],
-    live: null,
+    live: 'https://beyond-frontend.vercel.app/converter',
     repo: null,
     image: null,
     featured: false,
