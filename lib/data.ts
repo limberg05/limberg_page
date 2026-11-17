@@ -200,7 +200,7 @@ export const projects = [
     description:
       'Aplicación web que encuentra las partes compatibles entre sí para armar tu propia PC y entrega resultados con enlaces directos a productos disponibles en Mercado Libre.',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Lógica de compatibilidad'],
-    live: 'https://www.pcfacil.shop/',
+    live: null,
     repo: null,
     image: '/pcFacil.jpg',
     featured: true,
