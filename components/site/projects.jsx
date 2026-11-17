@@ -114,7 +114,7 @@ const Projects = () => {
         <SectionHeading
           eyebrow="03 — Portafolio"
           title="Proyectos en los que he trabajado"
-          description="Sitios en producción, herramientas internas y aplicaciones de accesibilidad. Filtra por tecnología para ver lo que te interesa."
+          description="Sitios web, herramientas internas y aplicaciones de accesibilidad. Filtra por tecnología para ver lo que te interesa."
         />
 
         {/* Filtros (scroll horizontal en móvil) */}
