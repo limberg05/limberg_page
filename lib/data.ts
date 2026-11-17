@@ -196,7 +196,7 @@ export const projects = [
   },
   {
     title: 'PC Fácil',
-    subtitle: 'pcfacil.shop',
+    subtitle: 'Armado de PC con piezas compatibles',
     description:
       'Aplicación web que encuentra las partes compatibles entre sí para armar tu propia PC y entrega resultados con enlaces directos a productos disponibles en Mercado Libre.',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Lógica de compatibilidad'],
